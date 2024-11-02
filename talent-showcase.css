@@ -13,6 +13,17 @@
     margin-bottom: 20px;
 }
 
+.talent-card:hover{
+    background-color: #1c1f26;
+    border-color: #545b6a;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+    border-width: 2px;
+    margin-bottom: 20px;
+    scale: 1.05;
+}
+
 .sm-icon-img{
     height: 35px;
     border-radius: 18px;
@@ -88,4 +99,13 @@
     height: 24px;
     width: 1px;
     background-color: #4a4a4a;
+}
+
+a {
+    text-decoration: none; /* Remove underline for normal state */
+    color: inherit; /* Use the same color as the parent element, optional */
+}
+
+a:hover {
+    text-decoration: none; /* Remove underline on hover */
 }
