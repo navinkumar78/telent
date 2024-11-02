@@ -13,7 +13,9 @@
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div class="container">
+        
         <!-- Header Section -->
         <header class="header">
             <h1 class = "head-blog">Blog Posts</h1>
@@ -53,6 +55,21 @@
             </div>
         </section>
     </div>
+
+    <script>
+        // JavaScript to load the navbar
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
 </body>
 
 </html>
