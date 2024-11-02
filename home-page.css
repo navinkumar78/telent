@@ -12,7 +12,14 @@ html {
     background: #1e3a6e;
     color: white;
     text-align: center;
-    padding: 60px 0;
+}
+
+.talent-heading{
+    margin-top: 10px;
+}
+
+.buttonhome{
+    margin-bottom: 10px;
 }
 
 .headinghome {
@@ -21,6 +28,7 @@ html {
     margin: 0;
     animation: fadeInDown 2s ease-out;
 }
+
 
 .parahome {
     font-size: 1.2em;

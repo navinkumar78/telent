@@ -15,11 +15,12 @@
 
 <body>
     <header class="bghome">
-        <div>
+        <div id="navbar"></div>
+        <div class="talent-heading">
             <h1 class="headinghome">TalentHive</h1>
             <p class=parahome>Showcase | Discover | Learn</p>
             <a href="login-page.html">
-                <button class="buttonhome">Login Now! | Sign-Up Now!</button>
+                <button class="buttonhome">Get Started!</button>
             </a>
             
         </div>
@@ -41,6 +42,22 @@
             <p class="cardparahome">Who told youtube or instagram videos are only about wasting time ? Learn what youve discovered and skillup yourself in the various skills available!</p>
         </div>
     </footer>
+    <div id="footer"></div>
+
+    <script>
+        // JavaScript to load the navbar
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
 </body>
 
 </html>
