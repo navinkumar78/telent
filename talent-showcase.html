@@ -17,6 +17,7 @@
 
 <body>
     <div class="talent-bg-container">
+        <div id="navbar"></div>
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -217,10 +218,25 @@
                 
             </div>
         </div>
+        <div id="footer"></div>
 
 
         </div>
 
+        <script>
+            // JavaScript to load the navbar
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                });
+
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        </script>
     
 </body>
 </html>

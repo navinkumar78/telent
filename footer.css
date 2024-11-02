@@ -1,0 +1,20 @@
+footer {
+    background-color: #004d6b; /* Dark background */
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+footer .input-group .form-control {
+    border-radius: 0; /* Flat corners */
+}
+
+footer .input-group .btn {
+    border-radius: 0; /* Flat corners */
+}
