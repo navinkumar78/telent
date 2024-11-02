@@ -16,7 +16,7 @@
             <!-- Login Form -->
             <div class="form login-form" id="login-form">
                 <h2>Login</h2>
-                <form action="#" method="post">
+                <form onsubmit="return handleLogin(event)">
                     <label for="login-email">Email</label>
                     <input type="email" id="login-email" name="email" required>
                     
@@ -31,7 +31,7 @@
             <!-- Signup Form -->
             <div class="form signup-form" id="signup-form" style="display: none;">
                 <h2>Sign Up</h2>
-                <form action="#" method="post">
+                <form onsubmit="return handleSignup(event)">
                     <label for="signup-email">Email</label>
                     <input type="email" id="signup-email" name="email" required>
                     
@@ -45,18 +45,33 @@
         </div>
     </div>
 
-    <script >
-        // script.js
+    <script>
+        // Script for toggling between login and signup
+        function showSignup() {
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("signup-form").style.display = "block";
+        }
 
-function showSignup() {
-    document.getElementById("login-form").style.display = "none";
-    document.getElementById("signup-form").style.display = "block";
-}
+        function showLogin() {
+            document.getElementById("signup-form").style.display = "none";
+            document.getElementById("login-form").style.display = "block";
+        }
 
-function showLogin() {
-    document.getElementById("signup-form").style.display = "none";
-    document.getElementById("login-form").style.display = "block";
-}
+        // Function to handle login
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Here you can add any validation or processing
+            window.location.href = 'talent-showcase.html'; // Redirect to talent-page.html
+            return false; // Prevent default form submission
+        }
+
+        // Function to handle signup
+        function handleSignup(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Here you can add any validation or processing
+            window.location.href = 'talent-showcase.html'; // Redirect to talent-page.html
+            return false; // Prevent default form submission
+        }
     </script>
 </body>
 </html>
