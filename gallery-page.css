@@ -1,18 +1,15 @@
-body {
+.gal-body {
     margin: 0;
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background-color: #1e3a6e;
 }
 
-.gal-bg{
-    background-color: #1e3a6e;
-}
+
 
 .gallery-main-head{
     font-family: "Display";
-    color:white;
+    color: #1e3a6e;
     text-align: center;
     font-size: 50px ;
 }

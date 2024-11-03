@@ -8,35 +8,41 @@
 </head>
 <body>
 <div id="navbar"></div>
-<div class = "gal-bg">
-    <h1 class="gallery-main-head">Gallery</h1>
-    <article class="gallery">
-        <a>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.Ajdh_kw2GFtQzwODj_J5JgHaEK&pid=Api&P=0&h=180" alt="guitar player at concert" />
-        </a>
-        <a href="https://comicss.art" target="_top">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.dHksvaksxVKmLgSogysTpgHaD4&pid=Api&P=0&h=180" alt="duo singing" />
-        </a>
-        <a>
-            <img src="https://tse2.mm.bing.net/th?id=OIP.cxQ9JAo9uNGFAmKIZ5wCyQAAAA&pid=Api&P=0&h=180" alt="crowd cheering" />
-        </a>
-        <a>
-            <img src="https://aniportalimages.s3.amazonaws.com/media/details/NxtWave_Logo2021090907535420210909075559.jpg" alt="singer performing" />
-        </a>
-        <a>
-            <img src="https://tse3.mm.bing.net/th?id=OIP.cAOgGado1bxM1YYddUMQqwHaEK&pid=Api&P=0&h=180" alt="singer fistbumping crowd" />
-        </a>
-        <a>
-            <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="man with a guitar singing" />
-        </a>
-        <a>
-            <img src="https://res.cloudinary.com/dqaznnail/image/upload/v1730540755/z7b6ymma3hdz2ogkf9wa.jpg" alt="" />
-        </a>
-        <a>
-            <img src="https://assets.codepen.io/1506195/unsplash-music-7.avif" alt="woman singing on stage" />
-        </a>
-    </article>
+<div class="gal-body">
+    <div class = "gal-bg">
+        <h1 class="gallery-main-head">Gallery</h1>
+        <article class="gallery">
+            <a>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Ajdh_kw2GFtQzwODj_J5JgHaEK&pid=Api&P=0&h=180" alt="guitar player at concert" />
+            </a>
+            <a href="https://comicss.art" target="_top">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.dHksvaksxVKmLgSogysTpgHaD4&pid=Api&P=0&h=180" alt="duo singing" />
+            </a>
+            <a>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.cxQ9JAo9uNGFAmKIZ5wCyQAAAA&pid=Api&P=0&h=180" alt="crowd cheering" />
+            </a>
+            <a>
+                <img src="https://aniportalimages.s3.amazonaws.com/media/details/NxtWave_Logo2021090907535420210909075559.jpg" alt="singer performing" />
+            </a>
+            <a>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.cAOgGado1bxM1YYddUMQqwHaEK&pid=Api&P=0&h=180" alt="singer fistbumping crowd" />
+            </a>
+            <a>
+                <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="man with a guitar singing" />
+            </a>
+            <a>
+                <img src="https://res.cloudinary.com/dqaznnail/image/upload/v1730540755/z7b6ymma3hdz2ogkf9wa.jpg" alt="" />
+            </a>
+            <a>
+                <img src="https://assets.codepen.io/1506195/unsplash-music-7.avif" alt="woman singing on stage" />
+            </a>
+        </article>
+    </div>
+
 </div>
+
+<div id="footer"></div>
+
 <script>
     // JavaScript to load the navbar
     fetch("navbar.html")
@@ -50,6 +56,13 @@
     .then(data => {
         document.getElementById("footer").innerHTML = data;
     });
+
+    const currentPage = window.location.pathname;
+
+// Change navbar color based on the page
+if (currentPage.includes("gallery-page.html") || currentUrl.includes("/gallery-page")) {
+    document.getElementById("navbar").style.backgroundColor = "#1e3a6e"; // Different color for Page 2
+}
 </script>
 </body>
 </html>
