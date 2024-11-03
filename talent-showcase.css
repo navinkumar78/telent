@@ -1,10 +1,10 @@
 .talent-bg-container{
-    background-color: #0e1217;
+    background-color: white;
     height: 180vh;
 }
 
 .talent-card{
-    background-color: #1c1f26;
+    background-color: #f5f8fc;
     border-color: #545b6a;
     border-radius: 10px;
     border-style: solid;
@@ -14,7 +14,7 @@
 }
 
 .talent-card:hover{
-    background-color: #1c1f26;
+    background-color: #f5f8fc;
     border-color: #545b6a;
     border-radius: 10px;
     border-style: solid;
@@ -31,7 +31,8 @@
 }
 
 .redirect-text{
-    background-color: white;
+    background-color: black;
+    color: white;
     border-radius: 10px;
     margin: 10px 0 10px 0;
     font-family: "Kanit";
@@ -40,22 +41,20 @@
 }
 
 .redirect-text:hover{
-    background-color: lightgray;
+    background-color: black;
+    color: white;
     border-radius: 10px;
     margin: 10px 0 10px 0;
     font-family: "Kanit";
     font-size: 15px;
-    color: black;
     cursor: pointer;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .talent-card-heading{
     font-size: 20px;
     font-weight: bold;
     font-family: "Kanit";
-    color: white;
+    color: black;
 }
 
 .talent-card-img{
@@ -79,7 +78,7 @@
 /* Icon styling */
 .material-symbols-outlined {
     font-size: 24px;
-    color: #B0B3B8; /* Light gray color for icons */
+    color: #1e3a6e; /* Light gray color for icons */
 }
 
 /* Number styling */
@@ -91,14 +90,14 @@
 
 .count-text {
     font-size: 16px;
-    color: #B0B3B8; /* Same light gray color */
+    color: #1e3a6e; /* Same light gray color */
 }
 
 /* Vertical divider styling */
 .divider {
     height: 24px;
     width: 1px;
-    background-color: #4a4a4a;
+    background-color: #1e3a6e;
 }
 
 a {
