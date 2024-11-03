@@ -63,7 +63,7 @@
 
 .search-bar input[type="text"]:focus,
 .search-bar select:focus {
-    border-color: #007bff;
+    border-color: #1e3a6e;
 }
 
 /* Blog Post Styles */

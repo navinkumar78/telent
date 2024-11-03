@@ -7,7 +7,7 @@
 }
 
 .disc-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     background: white;
     padding: 20px;
@@ -25,7 +25,7 @@
     width: 200px;
     margin: 20px auto;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #1e3a6e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -44,7 +44,7 @@
 }
 
 .qn {
-    color: #0056b3;
+    color: #1e3a6e;
 }
 
 .ans {
