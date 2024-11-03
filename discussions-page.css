@@ -1,36 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 .body-main {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif; /* Changed to a more readable font */
     margin: 0;
     padding: 20px;
+    line-height: 1.6; /* Improved line height for better readability */
+    font-size: 18px; /* Increased base font size */
+    color: #333; /* Consistent text color */
 }
 
 .disc-container {
     max-width: 1000px;
     margin: 0 auto;
     background: white;
-    padding: 20px;
+    padding: 30px; /* Increased padding for more space */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly heavier shadow */
 }
 
 .disc-title {
     text-align: center;
-    color: #333;
+    font-weight: bold;
+    color: #1e3a6e; /* Updated title color for better contrast */
+    font-size: 2em; /* Increased title size */
+    margin-bottom: 20px; /* Added bottom margin */
 }
 
 .ask-button {
     display: block;
-    width: 200px;
+    width: 220px; /* Increased button width */
     margin: 20px auto;
-    padding: 10px;
+    padding: 12px; /* Increased button padding */
     background-color: #1e3a6e;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px; /* Increased button font size */
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .ask-button:hover {
@@ -45,8 +52,12 @@
 
 .qn {
     color: #1e3a6e;
+    font-size: 1.3em; /* Increased question font size */
+    margin: 10px 0; /* Added margin for spacing */
+    font-weight: bold;
 }
 
 .ans {
     color: #666;
+    font-size: 1em; /* Increased answer font size */
 }

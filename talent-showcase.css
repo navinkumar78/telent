@@ -16,6 +16,7 @@
 .talent-card:hover{
     background-color: #f5f8fc;
     border-color: #545b6a;
+    text-decoration: none;
     border-radius: 10px;
     border-style: solid;
     padding: 10px;
