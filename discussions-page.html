@@ -9,55 +9,83 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Frequently Asked Questions About Python and Java</h1>
-        <button class="ask-button" onclick="askQuestion()">Ask a Question</button>
-        <div class="question">
-            <h2>1. What is Python?</h2>
-            <p>Python is a high-level, interpreted programming language known for its readability and simplicity.</p>
-        </div>
-        <div class="question">
-            <h2>2. What is Java?</h2>
-            <p>Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
-        </div>
-        <div class="question">
-            <h2>3. What are the key features of Python?</h2>
-            <p>Key features of Python include its simplicity, extensive libraries, and dynamic typing.</p>
-        </div>
-        <div class="question">
-            <h2>4. What are the key features of Java?</h2>
-            <p>Java is known for its platform independence, strong memory management, and rich standard libraries.</p>
-        </div>
-        <div class="question">
-            <h2>5. Is Python statically typed or dynamically typed?</h2>
-            <p>Python is dynamically typed, meaning variable types are determined at runtime.</p>
-        </div>
-        <div class="question">
-            <h2>6. Is Java statically typed or dynamically typed?</h2>
-            <p>Java is statically typed, meaning variable types must be declared at compile-time.</p>
-        </div>
-        <div class="question">
-            <h2>7. What are Python's main applications?</h2>
-            <p>Python is widely used in web development, data analysis, artificial intelligence, scientific computing, and automation.</p>
-        </div>
-        <div class="question">
-            <h2>8. What are Java's main applications?</h2>
-            <p>Java is commonly used in web development, enterprise applications, mobile applications (Android), and cloud-based services.</p>
-        </div>
-        <div class="question">
-            <h2>9. How does Python handle memory management?</h2>
-            <p>Python uses automatic memory management through reference counting and a built-in garbage collector.</p>
-        </div>
-        <div class="question">
-            <h2>10. How does Java handle memory management?</h2>
-            <p>Java manages memory through an automatic garbage collection process, which removes unused objects from memory.</p>
+    <div id="navbar"></div>
+
+    <div class="body-main">
+        <div class="disc-container">
+            <h1 class="disc-title">Frequently Asked Questions About Python and Java</h1>
+            <button class="ask-button" onclick="askQuestion()">Ask a Question</button>
+            <div class="question">
+                <h2 class="qn">1. What is Python?</h2>
+                <p class="ans">Python is a high-level, interpreted programming language known for its readability and simplicity.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">2. What is Java?</h2>
+                <p class="ans">Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">3. What are the key features of Python?</h2>
+                <p class="ans">Key features of Python include its simplicity, extensive libraries, and dynamic typing.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">4. What are the key features of Java?</h2>
+                <p class="ans">Java is known for its platform independence, strong memory management, and rich standard libraries.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">5. Is Python statically typed or dynamically typed?</h2>
+                <p class="ans">Python is dynamically typed, meaning variable types are determined at runtime.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">6. Is Java statically typed or dynamically typed?</h2>
+                <p class="ans">Java is statically typed, meaning variable types must be declared at compile-time.</p>
+            </div>
+            <div class="question">
+                <h2  class="qn">7. What are Python's main applications?</h2>
+                <p class="ans">Python is widely used in web development, data analysis, artificial intelligence, scientific computing, and automation.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">8. What are Java's main applications?</h2>
+                <p class="ans">Java is commonly used in web development, enterprise applications, mobile applications (Android), and cloud-based services.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">9. How does Python handle memory management?</h2>
+                <p class="ans">Python uses automatic memory management through reference counting and a built-in garbage collector.</p>
+            </div>
+            <div class="question">
+                <h2 class="qn">10. How does Java handle memory management?</h2>
+                <p class="ans">Java manages memory through an automatic garbage collection process, which removes unused objects from memory.</p>
+            </div>
         </div>
     </div>
+    
+    <div id="footer"></div>
 
     <script>
         function askQuestion() {
             alert("Feature coming soon! Please check back later.");
         }
+
+        
+            // JavaScript to load the navbar
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                });
+    
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    
+            const currentPage = window.location.pathname;
+    
+        // Change navbar color based on the page
+        if (currentPage.includes("discussions-page.html")) {
+            document.getElementById("navbar").style.backgroundColor = "#ff5733"; // Different color for Page 2
+        }
+        
     </script>
 </body>
 

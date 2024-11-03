@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-/* styles.css */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f2f2f2;
-}
-
+/* Contact form-specific styling */
 .contact-form-container {
     width: 100%;
     max-width: 500px;
@@ -23,24 +8,31 @@ body {
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
 }
 
-h2 {
+.contact-form-container h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #333333;
 }
 
-label {
+.contact-form-container label {
     font-weight: bold;
     color: #333333;
     margin-bottom: 0.5rem;
     display: block;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 1rem;
@@ -49,11 +41,11 @@ textarea {
     font-size: 1rem;
 }
 
-textarea {
+.contact-form-container textarea {
     resize: vertical;
 }
 
-button[type="submit"] {
+.contact-form-container button[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
@@ -65,6 +57,6 @@ button[type="submit"] {
     transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
+.contact-form-container button[type="submit"]:hover {
     background-color: #45a049;
 }
