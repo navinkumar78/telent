@@ -44,7 +44,7 @@ body {
 .d-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .card1-aboutpage {
